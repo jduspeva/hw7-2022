@@ -56,7 +56,7 @@ document.querySelector("#slider").addEventListener("input", function() {
 	var output = document.getElementById("volume");
 	output.innerHTML = slider.value;
 	slider.oninput = function() {
-  	output.innerHTML = this.value;
+  	output.innerHTML = this.value + "%";
 	video.volume = this.value / 100;
 	}
 	document.querySelector("#volume").innerText = video.volume + "%";
